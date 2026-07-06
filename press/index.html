@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WatchRetro — Press &amp; Editorial</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+         background: #060907; color: #d7e4db; line-height: 1.65; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 40px 20px 72px; }
+  header { display: flex; align-items: center; gap: 16px; margin: 8px 0 6px; }
+  .mark { width: 64px; height: 64px; border-radius: 16px; background: #0b0e10; border: 2px solid #39FF7A;
+          display: flex; align-items: center; justify-content: center; flex: none;
+          box-shadow: 0 0 24px rgba(57,255,122,.35); }
+  .mark svg { width: 40px; height: 40px; }
+  h1 { font-size: 30px; margin: 0; color: #eafff1; }
+  .sub { color: #7fa38c; margin: 2px 0 0; font-size: 15px; }
+  h2 { font-size: 21px; margin: 44px 0 4px; color: #39FF7A; }
+  h2 a { color: inherit; text-decoration: none; }
+  .kicker { font-family: ui-monospace, Menlo, monospace; letter-spacing: .18em; text-transform: uppercase;
+            font-size: 11px; color: #7fa38c; margin: 40px 0 -38px; }
+  p { margin: 10px 0; }
+  .fact { color: #9fb8a8; font-size: 14px; }
+  .shots { display: flex; gap: 14px; flex-wrap: wrap; margin: 18px 0 6px; }
+  .shots figure { margin: 0; flex: 1 1 180px; max-width: 240px; }
+  .shots img { width: 100%; border-radius: 14px; border: 1px solid #1d2b22; display: block; }
+  .shots figcaption { font-size: 12.5px; color: #7fa38c; margin-top: 6px; }
+  .rule { border: none; border-top: 1px solid #16211a; margin: 36px 0 0; }
+  footer { margin-top: 56px; color: #58705f; font-size: 13px; }
+  a { color: #39FF7A; }
+  .badge { display: inline-block; font-family: ui-monospace, Menlo, monospace; font-size: 11px;
+           letter-spacing: .14em; border: 1px solid #234c33; color: #8fd8a8; border-radius: 999px;
+           padding: 3px 10px; margin-right: 6px; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none">
+        <rect x="22" y="22" width="56" height="56" rx="16" stroke="#39FF7A" stroke-width="8"/>
+        <path d="M44 38 L44 62 L64 50 Z" fill="#39FF7A"/>
+      </svg>
+    </div>
+    <div>
+      <h1>WatchRetro</h1>
+      <p class="sub">Press &amp; editorial material — thirty hand-built arcade games, made only for the wrist.</p>
+    </div>
+  </header>
+
+  <p class="fact">
+    <span class="badge">watchOS-native</span>
+    <span class="badge">Fully offline</span>
+    <span class="badge">No ads · No IAP · No account</span>
+    <span class="badge">9 languages</span>
+  </p>
+  <p>WatchRetro treats the Apple Watch as a real game platform, not a second screen: the Digital
+     Crown is the joystick, a run lasts under a minute, and every game answers in synced haptics and
+     chiptune synthesized in code. One phosphor accent on true OLED black — the screen is the cabinet,
+     and the game glows out of the dark. Everything below is shipping today on the App Store
+     (<a href="https://apps.apple.com/app/id6781498222">WatchRetro: Watch Games Arcade</a>).</p>
+
+  <hr class="rule">
+  <h2 id="alive"><a href="#alive">1.1 — The cabinet came alive</a></h2>
+  <p>Real arcade cabinets never sit still, so neither does this one. <strong>Attract Mode</strong>:
+     leave the picker idle and the games begin demoing themselves — the actual engines driven by
+     little autopilots, never canned video — until a tap drops you into the demoed game, exactly like
+     stepping up to a machine mid-loop. <strong>Ghost Replay</strong>: every best run leaves a ghost;
+     the next run races its recorded pace live on the HUD. The cabinet remembers you, and it plays
+     back.</p>
+  <div class="shots">
+    <figure><img src="img/attract.png" alt="Attract Mode demoing Volley with TAP TO PLAY invitation"><figcaption>Attract Mode — idle games demo themselves.</figcaption></figure>
+    <figure><img src="img/putt.png" alt="Putt gameplay with aim ray and stroke meter"><figcaption>New in 1.1: Putt — Crown aims, tap commits.</figcaption></figure>
+    <figure><img src="img/gameover.png" alt="Game over card reading The rally ends"><figcaption>Every game signs its own result screen.</figcaption></figure>
+  </div>
+
+  <h2 id="daily"><a href="#daily">Daily Drop — the whole world, one seeded run</a></h2>
+  <p>Every day, one game and one deterministic seed, the same for every player on Earth, rolled at
+     local midnight from a pinned hash of the date. No server, no account — pure math. Play it and
+     your streak extends; the complication and Smart Stack nudge an unplayed day. It is a daily
+     ritual designed for the wrist: raise, run, done — the arcade's answer to the crossword.</p>
+  <div class="shots">
+    <figure><img src="img/picker-daily.png" alt="Picker with the Daily Drop card on top"><figcaption>The Daily Drop card leads the arcade.</figcaption></figure>
+    <figure><img src="img/achievements.png" alt="Achievements shelf"><figcaption>Sixty achievements, no Game Center login.</figcaption></figure>
+  </div>
+
+  <h2 id="accessibility"><a href="#accessibility">The VoiceOver arcade — playable blind</a></h2>
+  <p>Three of the thirty games — <strong>Echo</strong>, <strong>Pulse</strong>, and
+     <strong>Pairs</strong> — are genuinely playable by blind players with VoiceOver: spoken pad
+     playback and Crown-selection announcements in Echo, an assistive timing click the instant the
+     hand enters a live arc in Pulse, and an accessibility grid whose activations flow through the
+     real game shell in Pairs. Not menu-navigable — <em>playable</em>. Beyond the trio: WCAG-AA
+     contrast everywhere, Reduce Motion honored (including never auto-starting Attract Mode),
+     Dynamic Type to AX5, and haptic vocabularies distinct per event so the wrist alone tells the
+     story.</p>
+  <div class="shots">
+    <figure><img src="img/echo.png" alt="Echo memory game"><figcaption>Echo — spoken playback, Crown-select recall.</figcaption></figure>
+    <figure><img src="img/pulse.png" alt="Pulse rhythm game"><figcaption>Pulse — assistive timing cues under VoiceOver.</figcaption></figure>
+    <figure><img src="img/pairs.png" alt="Pairs memory match game"><figcaption>Pairs — an a11y grid over the real shell.</figcaption></figure>
+  </div>
+
+  <h2 id="offline"><a href="#offline">The airplane-mode arcade</a></h2>
+  <p>WatchRetro makes zero network calls. No ads, no IAP, no account, no analytics — the privacy
+     label is simply “Data Not Collected.” Put the watch in Airplane Mode over the Atlantic and all
+     thirty games, scores, achievements, ghosts, and the Daily Drop keep working, because everything
+     is computed and stored on the wrist. For travel collections: it is the game that works in seat
+     32F with the phone in the overhead bin.</p>
+  <div class="shots">
+    <figure><img src="img/volley.png" alt="Volley gameplay"><figcaption>Real swept-collision physics, 120 Hz fixed timestep.</figcaption></figure>
+  </div>
+
+  <footer>
+    <p>Contact: <a href="mailto:hemal08ce094@gmail.com">hemal08ce094@gmail.com</a> ·
+       <a href="../index.html">Support</a> · <a href="../privacy.html">Privacy</a></p>
+    <p>All screenshots are unretouched App Store material captured on the watchOS simulator.</p>
+  </footer>
+</div>
+</body>
+</html>
